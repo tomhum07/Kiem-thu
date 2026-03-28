@@ -16,15 +16,25 @@
 #     return a / b
 
 # bai 3
-class UserManager:
-    def __init__(self):
-        self.users = {}
+# class UserManager:
+#     def __init__(self):
+#         self.users = {}
 
-    def add_user(self, username, password):
-        if username in self.users:
-            raise ValueError("User already exists")
-        self.users[username] = password
-        return True
+#     def add_user(self, username, password):
+#         if username in self.users:
+#             raise ValueError("User already exists")
+#         self.users[username] = password
+#         return True
     
-    def get_user(self, username):
-        return self.users.get(username)
+#     def get_user(self, username):
+#         return self.users.get(username)
+
+
+# bài 4
+def is_prime(n):
+    if n <= 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True 
